@@ -1,0 +1,60 @@
+body{
+	background-image: url("https://photogrist.com/wp-content/uploads/2017/02/Slava-Semeniuta2.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#_1{
+	font-size:16vw;
+	font-family: 'Megrim', cursive;
+
+color:#fce043;
+height: 45vw;
+position:absolute;
+	line-height: 30vw;
+left:27%;
+}
+
+.back {
+	font-size:7vw;
+height: 21vw;
+	line-height: 7.2em;
+}
+
+.intro {
+	color: white;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	font-size: 17px;
+}
+
+.bton {
+    background-color: black;
+    border: 0.5vw solid #f02fa7;
+		border-radius: 11%;
+    color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2vw 1vw;
+		z-index: 10;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+		text-decoration: none;
+
+}
+
+.bton:hover {
+    background-color: #f02fa7 ;
+    color: white;
+}
+
+.ali {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}

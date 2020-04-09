@@ -1,0 +1,120 @@
+body {
+  background-color:black;
+}
+
+#rock {
+  background-image: url('http://hd-hintergrundbilder.com/musik/queen.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:79vh;
+  color: inherit;
+}
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: gold;
+
+}
+
+a:hover {
+  color: silver;
+}
+
+#jazz {
+  background-image: url('https://www.stlucianewsonline.com/wp-content/uploads/2014/09/general-saxophone-love-jazz-music-wallpaper-1920x1080-hot-hd-wallpaper-saxophone-wallpaper.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:79vh;
+}
+
+#pop {
+  background-image: url('https://images4.alphacoders.com/788/thumb-1920-788519.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:79vh;
+}
+
+#downtempo {
+  background-image: url('https://cdn.concreteplayground.com/content/uploads/2017/03/nick-murphy-chet-faker-vivid.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:79vh;
+}
+
+#bollywood {
+  background-image: url('https://i.pinimg.com/originals/9b/01/0e/9b010ec4cdc13093c9ded8b3e165ce5a.jpg');
+  background-position: center center;
+  background-size: cover;
+  height:79vh;
+}
+
+.genres {
+  width:100%;
+}
+
+
+.back {
+	font-size:7vw;
+  height: 60px;
+	line-height: 7.2em;
+}
+
+.options {
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+.veil{
+  background-color: black;
+  opacity:0.8;
+  height:79vh;
+  width:100%;
+  padding:none;
+  margin:none;
+}
+
+.tex
+{
+  border:solid 1px white;
+  border-top: none;
+  border-bottom: none;
+  color:gold;
+  background-color:transparent;
+  font-size:10vw;
+  font-family:Julius Sans One;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80vh;
+
+}
+
+.arrowdown {
+  z-index: 10;
+  position: fixed;
+  right: 7vw;
+  line-height: 100vh;
+  height: 40vh;
+  color:white;
+  font-size: 10vw;
+  cursor: pointer;
+}
+
+.arrowdown:hover{
+  color: gold;
+}
+
+.arrowup {
+  z-index: 10;
+  position: fixed;
+  right: 7vw;
+  line-height: 40vh;
+  height: 40vh;
+  color:white;
+  font-size: 10vw;
+  cursor: pointer;
+}
+
+.arrowup:hover {
+  color : gold;
+}

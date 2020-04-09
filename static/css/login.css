@@ -1,0 +1,64 @@
+.login {
+  position: absolute;
+  left:40.7vw;
+  top:16vh;
+  font-size: 7vw;
+  font-family: 'Megrim', cursive;
+  color:white;
+}
+
+#username {
+  position: absolute;
+  left: 37vw;
+  top: 38vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 13px;
+  color:white;
+}
+
+#password {
+  position: absolute;
+  left: 37vw;
+  top: 53vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 13px;
+  color: white;
+}
+
+#submit {
+  position: absolute;
+  left: 37vw;
+  top: 68vh;
+  width: 25vw;
+  font-family: 'Megrim', cursive;
+  font-size: 15px;
+  background-color: #62466b;
+  border-radius: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#submit:hover {
+  background-color: #973b87 ;
+  color: white;
+}
+
+.trans {
+  background-color: #0a002d;
+  width: 35vw;
+  height: 62vh;
+  opacity:0.7;
+  position: absolute;
+  left:32vw;
+  top: 17vh;
+}
+
+
+body {
+  background-image: url("http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-digital-art-3d-photoshop-art-awesome/wallpaper-digital-art-3d-photoshop-rendering-awesome-790.jpg");
+  background-size: auto;
+}

@@ -1,0 +1,85 @@
+body{
+	background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2011/05/bollywooda_a_l.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+}
+
+.options {
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+
+#notifs {
+	background-color: black;
+	color: black;
+	padding: 3px;
+	height: 270px;
+	overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+#notifs li:nth-child(odd) {
+	background: #353535;
+	color: white;
+}
+
+#notifs li:nth-child(even) {
+	background: #161616;
+	color: silver;
+}
+
+
+#theme {
+  height:28vh;
+  opacity: 1;
+}
+
+.hpop {
+  font-size: 20vh;
+  font-family: Julius Sans One;
+  text-align: center;
+  color:#ffa02d;
+}
+
+img {
+  height:100%;
+  width:100%;
+}
+audio{
+	position: fixed;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+	background-color: #0d0d0d;
+	overflow:hidden;
+	width: 100%;
+  font-size:1.5vw;
+  font-family:Julius Sans One;
+	color:#fce043;
+}
+
+.back {
+	font-size:7vw;
+  height: 95px;
+	line-height: 7.2em;
+}
+
+.table {
+	padding:0;
+	margin: 0;
+	border: 0;
+}
+.tr {
+	background-color: black;
+	opacity: 0.9;
+	padding:0;
+	margin-bottom:1.5vw;
+	height:250px;
+	width:75%;
+	border: 0;
+}

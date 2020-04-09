@@ -1,0 +1,85 @@
+body{
+	background-image: url("https://wallpapermemory.com/uploads/307/the-rolling-stones-wallpaper-1080p-402436.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+}
+
+.options {
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+.play {
+	background-color: black;
+	color: white;
+}
+
+#Public {
+	background-color: silver;
+	color: black;
+}
+
+#Private {
+	background-color: silver;
+	color: black;
+}
+
+#theme {
+  height:28vh;
+	opacity: 0.9;
+}
+.songs
+{
+		color:white;
+}
+
+.rimg {
+	height:28vh;
+}
+
+.hrock{
+	font-family: Anton;
+	color: maroon;
+	font-size: 20vh;
+	text-align: center;
+}
+
+img {
+  height:100%;
+  width:100%;
+}
+audio{
+	position: fixed;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+	background-color: #0d0d0d;
+	overflow:hidden;
+	width: 100%;
+  font-size:1.5vw;
+  font-family:Julius Sans One;
+	color:#fce043;
+}
+
+.back {
+	font-size:7vw;
+  height: 95px;
+	line-height: 7.2em;
+}
+
+.table {
+	padding:0;
+	margin: 0;
+	border: 0;
+}
+.tr {
+	background-color: black;
+	padding:0;
+	margin-bottom:1.5vw;
+	height:28vh;
+	width:75%;
+	border: 0;
+}

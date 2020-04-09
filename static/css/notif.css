@@ -1,0 +1,57 @@
+body{
+	background-image: url("https://www.yatzer.com/sites/default/files/p4_david_bowie_goldenyears_louis_sidoli_neon_artist_halcyon_gallery_yatzer.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+}
+
+.plist {
+	background-color: black;
+	color: hotpink;
+	width:33vw;
+	border: solid 2px silver;
+	padding: 3px;
+}
+
+.follow {
+  color: black;
+  background-color: gold;
+  width:120px;
+  font-family: Megrim;
+  font-size: 25px;
+}
+
+.newheader
+{
+  font-size: 6vw;
+  font-family: Megrim;
+	font-weight: bold;
+  color:Black;
+}
+
+.pnotify
+{
+  background-color: black;
+	color: hotpink;
+	width:70vw;
+	border: solid 2px silver;
+	padding: 3px;
+	position: relative;
+	left:9vw;
+}
+
+
+.shead {
+  color: gold;
+  background-color: black;
+  font-family: 'Poiret One', cursive;
+  font-size: 5vw;
+}
+
+.back {
+	font-size:7vw;
+  height: 97px;
+	line-height: 7.2em;
+}

@@ -1,0 +1,63 @@
+body{
+	background-image: url("https://i.ytimg.com/vi/3tfi0o_yuWY/maxresdefault.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+}
+
+.options {
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+#theme {
+  height:28vh;
+  opacity: 1;
+}
+
+.hpop {
+  font-size: 20vh;
+  font-family: Julius Sans One;
+  text-align: center;
+  color:gold;
+}
+
+img {
+  height:100%;
+  width:100%;
+}
+audio{
+	position: fixed;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+	background-color: #0d0d0d;
+	overflow:hidden;
+	width: 100%;
+  font-size:1.5vw;
+  font-family:Julius Sans One;
+	color:#fce043;
+}
+
+.back {
+	font-size:7vw;
+  height: 95px;
+	line-height: 7.2em;
+}
+
+.table {
+	padding:0;
+	margin: 0;
+	border: 0;
+}
+.tr {
+	background-color: black;
+	opacity: 0.9;
+	padding:0;
+	margin-bottom:1.5vw;
+	height:250px;
+	width:75%;
+	border: 0;
+}

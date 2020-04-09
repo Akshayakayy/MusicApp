@@ -1,0 +1,38 @@
+.panel-footer {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+	background-color: #0d0d0d;
+	overflow:hidden;
+	width: 100%;
+	height:60px;
+  font-size:1.5vw;
+  font-family:Julius Sans One;
+	color:#fce043;
+}
+
+#hnot {
+	
+	color: gold;
+}
+
+#notifs {
+	background-color: black;
+	color: black;
+	padding: 3px;
+	height: 270px;
+	overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+#notifs li:nth-child(odd) {
+	background: #353535;
+	color: white;
+}
+
+#notifs li:nth-child(even) {
+	background: #161616;
+	color: silver;
+}

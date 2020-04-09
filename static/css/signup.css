@@ -1,0 +1,86 @@
+h1 {
+  position: absolute;
+  left:38vw;
+  top:3vh;
+  font-size: 7vw;
+  font-family: 'Megrim', cursive;
+  color:white;
+  z-index: 1;
+}
+
+#username {
+  position: absolute;
+  left: 37vw;
+  top: 23.5vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 11px;
+  color:white;
+}
+
+#mail {
+  position: absolute;
+  left: 37vw;
+  top: 36vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 11px;
+  color: white;
+}
+
+#password {
+  position: absolute;
+  left: 37vw;
+  top: 52vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 11px;
+  color: white;
+}
+
+#cpassword {
+  position: absolute;
+  left: 37vw;
+  top: 65vh;
+  width:25vw;
+  font-family: Didact Gothic;
+  font-size: 11px;
+  color: white;
+}
+
+#submit {
+  position: absolute;
+  left: 37vw;
+  top: 83vh;
+  width: 25vw;
+  font-family: 'Megrim', cursive;
+  font-size: 15px;
+  background-color: #62466b;
+  border-radius: 0;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#submit:hover {
+  background-color: #973b87 ;
+  color: white;
+}
+
+.trans {
+  background-color: #0a002d;
+  width: 35vw;
+  height: 93vh;
+  opacity:0.7;
+  position: absolute;
+  left:32vw;
+  top: 3vh;
+}
+
+
+
+body {
+  background-image: url("https://78.media.tumblr.com/b7710155ab489e37b6a65d3354641de6/tumblr_okbna3Kvgm1w1109zo1_1280.jpg");
+  background-size: auto;
+}

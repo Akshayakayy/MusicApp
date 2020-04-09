@@ -1,0 +1,73 @@
+body{
+	background-image: url("https://cdn1.eyeem.com/thumb/f06b8eed7cc7e8fcfbda0ad366bcc19ef8bd64f8-1486941950372/w/800");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+}
+
+.options {
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+audio{
+	position: fixed;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+	background-color: #0d0d0d;
+	overflow:hidden;
+	width: 100%;
+  font-size:1.5vw;
+  font-family:Julius Sans One;
+	color:#fce043;
+}
+
+.phead {
+  position: absolute;
+  left:55vw;
+  font-size: 6vw;
+  top:25vh;
+  font-family: Megrim;
+  color:white;
+
+}
+.plist {
+	background-color: black;
+	color: hotpink;
+	width:33vw;
+	border: solid 2px silver;
+	padding: 3px;
+	position: relative;
+	left:9vw;
+}
+
+.back {
+	font-size:7vw;
+  height: 95px;
+	line-height: 7.2em;
+}
+
+#private {
+  position: absolute;
+  left:67vw;
+  font-size: 3vw;
+  top:47vh;
+  font-family: Julius Sans One;
+  color:hotpink;
+  background-color: black;
+  cursor: pointer;
+}
+
+#public {
+  position: absolute;
+  left:67vw;
+  font-size: 3vw;
+  top:60vh;
+  font-family: Julius Sans One;
+  color:hotpink;
+  background-color: black;
+  cursor: pointer;
+}
