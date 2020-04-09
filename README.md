@@ -1,4 +1,5 @@
-Kosha is a music streaming app that contains songs from various genres.
+# Kosha - Music Streaming App
+### Kosha is a music streaming app that contains songs from various genres.
 
 The key features are:-
 1. Users can discover genres and find songs from each.
