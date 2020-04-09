@@ -7,5 +7,3 @@ The key features are:-
 4. Users can search for users and view their public playlist.
 5. Other users can be searched for and followed/unfollowed.
 6. The user will be notified if the person he or she is following has added any songs to their public playlist.
-
-This was created by Souvik(20171094) and Akshaya(20171016).
