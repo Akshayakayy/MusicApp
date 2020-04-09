@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block styling %}
+
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+    <link type="text/css" href="{{url_for('static',filename='css/searchpage.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+{% endblock %}
+
+{% block title %}SEARCH{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+
+
+<center><h1 class="shead">{{SearchedUser}}'s Playlist</h1>
+<button class="btns" id={{followstate}}>FOLLOW</button>
+<button class="btns" id={{unfollowstate}}>UNFOLLOW</button>
+<div class="user">
+  {% for music in SearchUser %}
+  <div class="plist">  {{music.Song_Name}}</div>
+  {% endfor %}
+</div>
+</center>
+<div class="back"></div>
+<script>
+  var follow=$('.shead').next().attr('id');
+  var unfollow=$('.shead').next().next().attr('id');
+  if (follow=='hide')
+  {
+    $('#'+follow).hide();
+    $('#'+unfollow).show();
+  }
+  else {
+    $('#'+follow).show();
+    $('#'+unfollow).hide();
+  };
+
+  $('.btns').on('click',function(){
+    var type=$(this).text();
+    var element=$(this);
+    console.log(type);
+    $.ajax({
+      type:'POST',
+      url:'/SearchResults/{{SearchedUser}}',
+      data:
+      {
+        type:type,
+      },
+      success:function(){
+        if(type=="FOLLOW")
+          element.text('UNFOLLOW');
+        else
+          element.text('FOLLOW');
+      },
+      error:function(){
+        alert('Something went awry!');
+      }
+    });
+  });
+
+</script>
+{% endblock %}

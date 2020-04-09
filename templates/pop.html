@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/pop.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+{% endblock %}
+{% block title %}POP{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+<center>
+<div class="table">
+  <div class="tr" id="theme">
+    <p class="hpop">Pop</p>
+  </div>
+  {% for music in Music %}
+  <div class="tr songs">
+    <table>
+      <tr>
+    <td>
+      <img class="rimg" src="http://randomstory.org/wp-content/uploads/2013/04/POP-Music-l.jpg">
+    </td>
+    <td>
+    {{music.Song_Name}}
+
+    <button class="play" id="{{music.Url_Path}}"> ▶️ </button>
+    <div class="{{music.Song_Name}}">
+      <button class="Playlist" id="Public">Add To Public Playlist</button>
+      <button class="Playlist" id="Private">Add To Private Playlist</button>
+    </div>
+  </td>
+</tr>
+</table>
+  </div>
+  {% endfor %}
+</div>
+</center>
+<div class="back"></div>
+<audio controls id="play-song">
+  <source src="" type="audio/mpeg" class="mp3">
+</audio>
+<script type="text/javascript" src="{{url_for('static',filename='js/pop.js')}}"></script>
+{% endblock %}

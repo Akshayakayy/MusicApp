@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/profile.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+{% endblock %}
+
+{% block title %}PROFILE{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+<p class="phead">My Playlists</p>
+<div class="list" id="privatelist">
+  {% for music in PrivateUser %}
+  <div class="plist">
+    {{music.Song_Name}}
+  </div>
+  {% endfor %}
+</div>
+<div class="list" id="publiclist">
+  {% for music in PublicUser %}
+  <div class="plist">
+    {{music.Song_Name}}
+  </div>
+  {% endfor %}
+</div>
+<button class="display" id="private">  Private  </button>
+<button class="display" id="public">  Public  </button>
+<div class="back"></div>
+<audio controls>
+  <source src="{{url_for('static',filename='https://song.link/in/i/1136768508')}}" type="audio/mpeg">
+</audio>
+<script type="text/javascript" src="{{url_for('static',filename='js/profile.js')}}"></script>
+{% endblock %}

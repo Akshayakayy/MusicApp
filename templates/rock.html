@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/rock.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+{% endblock %}
+{% block title %}ROCK{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+<center>
+<div class="table">
+  <div class="tr" id="theme">
+    <p class="hrock">Rock</p>
+  </div>
+  {% for music in Music %}
+
+    <div class="tr songs">
+      <table>
+        <tr>
+      <td>
+        <img class="rimg" src="http://musicartists.org/wp-content/uploads/2014/03/Rock-Music-History.jpg">
+      </td>
+      <td>
+      {{music.Song_Name}}
+
+      <button class="play" id="{{music.Url_Path}}"> ▶️ </button>
+      <div class="{{music.Song_Name}}">
+        <button class="Playlist" id="Public">Add To Public Playlist</button>
+        <button class="Playlist" id="Private">Add To Private Playlist</button>
+      </div>
+    </td>
+  </tr>
+</table>
+    </div>
+  {% endfor %}
+</div>
+</center>
+<div class="back"></div>
+<audio controls id="play-song">
+  <source src="" type="audio/mpeg" class="mp3">
+</audio>
+<script type="text/javascript" src="{{url_for('static',filename='js/rock.js')}}"></script>
+{% endblock %}

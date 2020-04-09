@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/home.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+{% endblock %}
+
+{% block title %}HOME{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+<center>
+  <p class="welcome">Welcome!</p>
+<div class="table">
+  <div class="tr">
+    <p class="headi">Creator's picks</p>
+  </BR>
+  <img class="images" src="https://images.genius.com/5775bc2a36794700c81b8a3b669ed03c.1000x1000x1.jpg">
+  <img class="images" src="https://images-na.ssl-images-amazon.com/images/I/61s04IHsnmL._SY355_.jpg">
+  <img class="images" src="https://images.genius.com/047e4c2909c839d4acc141d9cc746157.1000x1000x1.jpg">
+  <img class="images" src="https://i.pinimg.com/originals/09/1b/a1/091ba17d23cd917d907e5bfbc6a63012.jpg">
+  <img class="images" src="http://4.bp.blogspot.com/-xr4YhzTRNCs/UoD4fypUrsI/AAAAAAAAAMU/LHy7fOWGpRg/s1600/Summertime-Sadness-Lana-Del-Rey.png">
+  </div>
+
+</div>
+</center>
+<div class="back"></div>
+
+{% endblock %}

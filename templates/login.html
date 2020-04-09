@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Didact%20Gothic' rel='stylesheet'>
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/login.css')}}" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+{% endblock %}
+</head>
+<body>
+<div class="trans"></div>
+{% with messages=get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category,message in messages %}
+    <div class="alert alert-{{category}}">
+      {{ message }}
+    </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+{% if error %}
+  <div class="alert alert-danger">
+    {{error}}
+  </div>
+{% endif %}
+
+{% if msg %}
+  <div class="alert alert-success">
+    {{msg}}
+  </div>
+{% endif %}
+
+<h1 class="login">Login</h1>
+  {% from "features/_formhelpers.html" import render_field %}
+  <form method="POST" action="/Login">
+    <div class="form-group" id="username">
+      {{render_field(form.UserName,class_="form-control")}}
+    </div>
+    <div class="form-group" id="password">
+      {{render_field(form.Password,class_="form-control")}}
+    </div>
+    <p><input type="submit" class="btn btn-primary" id="submit" value="Submit"></p>
+  </form>
+</body>
+</html>

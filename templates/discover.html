@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/discover.css')}}" rel="stylesheet"></link>
+{% endblock %}
+
+{% block title %}DISCOVER{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+
+<div class="arrowdown">
+  <p>↡</p>
+</div>
+<div class="arrowup">
+  <p>↟</p>
+</div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 genres" id="rock">
+        <div class="veil">
+          <div class="tex"><a href="/discover/rock">Rock</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 genres" id="jazz">
+        <div class="veil">
+          <div class="tex"><a href="/discover/jazz">Jazz & Retro</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 genres" id="pop">
+        <div class="veil">
+          <div class="tex"><a href="/discover/pop">Pop</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 genres" id="downtempo">
+        <div class="veil">
+          <div class="tex"><a href="/discover/downtempo">Downtempo</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 genres" id="bollywood">
+        <div class="veil">
+          <div class="tex"><a href="/discover/indian">Bollywood</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<div class="back"></div>
+
+<script type="text/javascript" src="{{url_for('static',filename='js/discover.js')}}"></script>
+{% endblock %}

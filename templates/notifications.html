@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block styling %}
+
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+    <link type="text/css" href="{{url_for('static',filename='css/notif.css')}}" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+{% endblock %}
+
+{% block title %}NOTIFY{% endblock %}
+
+{% block content %}
+{% include 'features/navtab.html' %}
+<center class="newheader">NOTIFICATIONS</center>
+<div class="content">
+  {% for notification in Notifications %}
+    <div class="pnotify">{{notification.body}}</div>
+  {% endfor %}
+</div>
+{% endblock %}

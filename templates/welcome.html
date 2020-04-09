@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block styling %}
+    <link type="text/css" href="{{url_for('static',filename='css/welcome.css')}}" rel="stylesheet"></link>
+{% endblock %}
+
+{% block title %}KOSHA{% endblock %}
+
+{%block content %}
+<div class="container-fluid">
+  <div class="header">
+    <div class="kosha" id="_2">KoshA</div>
+    <div class="kosha" id="_1">KoshA</div>
+    <div class="back"></div>
+  </div>
+</div>
+
+<div class="intro">
+  <p>Kosha is an interactive music streaming app with loads of songs from loads of genres. Turn up the volume and get groovin'!</p>
+</div>
+
+<div class="ali">
+  <button type="button" class="bton" onclick="location.href='/Login'"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+  <button type="button" class="bton" onclick="location.href='/SignUp'"><span class="glyphicon glyphicon-user"></span> Sign Up</button>
+</div>
+
+{% endblock %}

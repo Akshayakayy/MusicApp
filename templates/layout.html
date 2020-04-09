@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Over%20the%20Rainbow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville%20Cursive' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact%20Gothic' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link type="text/css" href="{{url_for('static',filename='css/layout.css')}}" rel="stylesheet"></link>
+    {% block styling %}{% endblock %}
+
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    {% block content%}{% endblock %}
+
+    <div class="panel-footer" style="width:100%">
+      <h5>Created by Akshaya Karthikeyan and Souvik Banerjee</h5>
+    </div>
+
+    <script type="text/javascript" src="{{url_for('static',filename='js/layout.js')}}"></script>
+  </body>
+</html>
